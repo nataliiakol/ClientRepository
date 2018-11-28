@@ -1,0 +1,52 @@
+﻿<UserControl x:Class="Customers.NewCustomer"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Customers"
+             mc:Ignorable="d" 
+             d:DesignHeight="550" d:DesignWidth="1100">
+    <StackPanel >
+        <StackPanel Orientation="Horizontal">
+            <Label  Content="Customer type:"  Margin="100,73,0,0" VerticalAlignment="Top"/>
+            <ComboBox Height="23" Width="416" Margin="10,70,0,0">
+                <ComboBoxItem Name="NotSelectedCustomerType" Content="(NotSelected)" IsSelected="True"></ComboBoxItem>
+                <ComboBoxItem Name="PersonCustomerType" Content="Person"></ComboBoxItem>
+                <ComboBoxItem Name="CompanyCustomerType" Content="Company"></ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+        <Label x:Name="CustomerTypeSelected" Margin="445,0,0,0">
+            <TextBlock>
+                <Run Foreground="Red" FontStyle="Italic">Customer type must be selected</Run>
+            </TextBlock>
+        </Label>
+        <StackPanel Orientation="Horizontal">
+            <Label  Content="First name:"  Margin="123,20,0,10" VerticalAlignment="Center"/>
+            <TextBox Height="23" Width="416" Margin="10,20,0,0"/>
+        </StackPanel>
+        <Label x:Name="FirstNameSelected" Margin="502,0,0,0">
+            <TextBlock>
+                <Run Foreground="Red" FontStyle="Italic">First name is missing</Run>
+            </TextBlock>
+        </Label>
+        <StackPanel Orientation="Horizontal">
+            <Label  Content="Last name:"  Margin="125,20,0,10" VerticalAlignment="Top"/>
+            <TextBox Height="23" Width="416" Margin="10,20,0,0"/>
+        </StackPanel>
+        <Label x:Name="LastNameSelected" Margin="502,0,0,0">
+            <TextBlock>
+                <Run Foreground="Red" FontStyle="Italic">Last name is missing</Run>
+            </TextBlock>
+        </Label>
+        <StackPanel Orientation="Horizontal">
+            <Label  Content="E-mail:"  Margin="145,20,0,10" VerticalAlignment="Top"/>
+            <TextBox Height="23" Width="416" Margin="10,20,0,0"/>
+        </StackPanel>
+        <Label x:Name="EmailNameSelected" Margin="482,0,0,0">
+            <TextBlock>
+                <Run Foreground="Red" FontStyle="Italic">E-mail address is missing</Run>
+            </TextBlock>
+        </Label>
+        <Button x:Name="SaveBtn" Click="Save_OnClick" Content="Save" Height="23" Width="60" Margin="370,20,0,0 "/>
+    </StackPanel>
+</UserControl>
