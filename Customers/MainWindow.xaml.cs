@@ -32,7 +32,7 @@ namespace Customers {
 
         public void AllCustomers_OnClick(Object sender, EventArgs args)
         {
-            TabItem allCustomersTabItem = new TabItem { Header = "AllCustomer" };
+            TabItem allCustomersTabItem = new TabItem { Header = "AllCustomer" };            
             allCustomersTabItem.Content = new AllCustomers();
             tabC.Items.Add(allCustomersTabItem);
             tabC.SelectedIndex = tabC.Items.Count -1;
