@@ -25,6 +25,7 @@ namespace Customers
             InitializeComponent();
         }
         public void Save_OnClick(Object sender, EventArgs args) {
+            Customer customer = new Customer((CustomerType)CustomerType.SelectedItem, FirstName.Text, LastName.Text, EMail.Text );
             throw new NotImplementedException();
         }
     }

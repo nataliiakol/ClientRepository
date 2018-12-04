@@ -9,7 +9,7 @@
     <StackPanel >
         <StackPanel Orientation="Horizontal">
             <Label  Content="Customer type:"  Margin="100,73,0,0" VerticalAlignment="Top"/>
-            <ComboBox Height="23" Width="416" Margin="10,70,0,0">
+            <ComboBox Name ="CustomerType"  Height="23" Width="416" Margin="10,70,0,0">
                 <ComboBoxItem Name="NotSelectedCustomerType" Content="(NotSelected)" IsSelected="True"></ComboBoxItem>
                 <ComboBoxItem Name="PersonCustomerType" Content="Person"></ComboBoxItem>
                 <ComboBoxItem Name="CompanyCustomerType" Content="Company"></ComboBoxItem>
@@ -22,7 +22,7 @@
         </Label>
         <StackPanel Orientation="Horizontal">
             <Label  Content="First name:"  Margin="123,20,0,10" VerticalAlignment="Center"/>
-            <TextBox Height="23" Width="416" Margin="10,20,0,0"/>
+            <TextBox Name="FirstName" Height="23" Width="416" Margin="10,20,0,0"/>
         </StackPanel>
         <Label x:Name="FirstNameSelected" Margin="502,0,0,0">
             <TextBlock>
@@ -31,7 +31,7 @@
         </Label>
         <StackPanel Orientation="Horizontal">
             <Label  Content="Last name:"  Margin="125,20,0,10" VerticalAlignment="Top"/>
-            <TextBox Height="23" Width="416" Margin="10,20,0,0"/>
+            <TextBox Name="LastName" Height="23" Width="416" Margin="10,20,0,0"/>
         </StackPanel>
         <Label x:Name="LastNameSelected" Margin="502,0,0,0">
             <TextBlock>
@@ -40,7 +40,7 @@
         </Label>
         <StackPanel Orientation="Horizontal">
             <Label  Content="E-mail:"  Margin="145,20,0,10" VerticalAlignment="Top"/>
-            <TextBox Height="23" Width="416" Margin="10,20,0,0"/>
+            <TextBox Name="EMail" Height="23" Width="416" Margin="10,20,0,0"/>
         </StackPanel>
         <Label x:Name="EmailNameSelected" Margin="482,0,0,0">
             <TextBlock>

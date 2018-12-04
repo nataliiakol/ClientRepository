@@ -19,7 +19,10 @@ namespace Customers {
     /// </summary>
     public partial class MainWindow : Window {
 
+        private TabItem allCustomersTabItem;
         public MainWindow() {
+            allCustomersTabItem = new TabItem { Header = "AllCustomer" };
+            allCustomersTabItem.Content = new AllCustomers();
             InitializeComponent();
         }
 
@@ -32,10 +35,16 @@ namespace Customers {
 
         public void AllCustomers_OnClick(Object sender, EventArgs args)
         {
-            TabItem allCustomersTabItem = new TabItem { Header = "AllCustomer" };            
-            allCustomersTabItem.Content = new AllCustomers();
-            tabC.Items.Add(allCustomersTabItem);
-            tabC.SelectedIndex = tabC.Items.Count -1;
+            if (tabC.Items.Contains(allCustomersTabItem))
+            {
+                tabC.SelectedIndex = tabC.Items.IndexOf(allCustomersTabItem);
+            }
+            else
+            {
+                tabC.Items.Add(allCustomersTabItem);
+                tabC.SelectedIndex = tabC.Items.Count - 1;
+            }
+
         }  
     } 
 }

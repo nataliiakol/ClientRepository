@@ -33,17 +33,19 @@
                     </Border>
 
                 <TabControl Name="tabC">
-                    <!--<TabItem Header="Customers">
-                        --><!--<Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition/>
-                                <ColumnDefinition/>
-                                <ColumnDefinition/>
-                            </Grid.ColumnDefinitions>
-                            <Label Grid.Column="0" Content =" Name"/>
-                            <Label Grid.Column="1" Content ="E-mail"/>
-                            <Label Grid.Column="2" Content ="Total Sales"/>
-                        </Grid>--><!--
+                    <!--<TabItem Header="Customers" Visibility="Hidden" x:Name="AllCustomers">
+                      
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Content ="Name"/>
+                                <Label Grid.Column="1" Content ="E-mail"/>
+                                <Label Grid.Column="2" Content ="Total Sales"/>
+                            </Grid>
+                   
                     </TabItem>-->
                 </TabControl>
             </StackPanel>
